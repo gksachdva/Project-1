@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+           font-size: 22px;
+           text-align: center;
+           background-color: red;
+           color:white;
+           display: none;
+       } 
+       @media(max-width:300px){
+#box1{
+    display: block;
+    background-color: cyan;
+        }
+    }
+
+    @media(max-width:500px) and (min-width:300px){
+        #box2{
+            display: block;
+            background-color: blueviolet;
+        }
+    }
+    @media(min-width:500px) and (max-width:800px){
+        #box3{
+            display: block;
+            background-color: rgb(198, 226, 72);
+        }
+    }
+    @media(max-width:800px) and (min-width:300px){
+        #box4{
+            display: block;
+            background-color: rgb(250, 28, 176);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">My name is sakshi</div>
+    <div class="box" id="box2">My name is gaurav</div>
+    <div class="box" id="box3">My name is jimpy</div>
+    <div class="box" id="box4">My name is shailja</div>
+</body>
+</html>
